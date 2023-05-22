@@ -1,18 +1,18 @@
-# **Smash Fruit - Projet de groupe**
+# ** 🍉 Smash Fruit - Projet de groupe**
 
 Ce projet est un petit jeu de type "Fruit Slicer"
 
-## **Membres de l'équipe**
+## ** 👨‍💻 Membres de l'équipe**
 
 - Alexandre Rocchi  
 - Cyril Rogrigues
 - Matéo Perrot--Nasi
 
-## **Description du jeu**
+## ** 📝 Description du jeu**
 
 Le jeu est un projet 3D en vue 2D avec une caméra fixe. Le joueur doit détruire des objets qui apparaissent aléatoirement à l'écran en les tranchant avec la souris. Certains objets rapportent des points, tandis que d'autres font perdre des points de score et de la vie au joueur.
 
- ## **Fonctionnalités développées**
+ ## ** 🔨 Fonctionnalités développées**
 
 - Un projet 3D en vu 2D avec camera fixe.
 - Créer des objets qui rapportent des points de score au joueur.
@@ -29,7 +29,7 @@ Le jeu est un projet 3D en vue 2D avec une caméra fixe. Le joueur doit détruir
 - Ajouter de la musique et des sounds effects pour donner de la vie à votre jeu (les volumes peuvent être réglés dans le menu de départ ou dans le menu pause) 
 - Créer des objets bonus/malus qui apparaitront sur l'écran du joueur de manière aléatoire qu'il devra détruire pour activer des effets bonus/malus. 
 
-## **Répartition des tâches**
+## ** 📚 Répartition des tâches**
 
 * Alexandre : Gestion des interactions utilisateur, des sons et effets, et du système de vie .
 * Cyril : Création des objets 3D, animations, effets ect...
@@ -41,7 +41,7 @@ Le jeu est un projet 3D en vue 2D avec une caméra fixe. Le joueur doit détruir
 
 Le projet est géré à l'aide de Git (Anciennement sur Gitlab) pour la gestion des versions et du code source. 
 
-## **Structure du répertoire**
+## ** 📁 Structure du répertoire**
 
 /Assets/Assets_project: Contient les ressources du jeu (modèles 3D, textures, sons, etc.).
 
@@ -49,13 +49,13 @@ Le projet est géré à l'aide de Git (Anciennement sur Gitlab) pour la gestion 
 
 /Assets/Assets_project/Audio: Contient les sons du jeu.*
 
-## **Instructions pour exécuter le jeu**
+## ** 👁‍🗨 Instructions pour exécuter le jeu**
 
 - Cloner le dépôt Git : git clone https://github.com/MateoPerrotNasi/SmashFruits.git
 - Ouvrir le projet dans Unity.
 - Compiler et exécuter le jeu en suivant les instructions spécifiques à votre environnement.
 
-## **Conclusion**
+## ** 🎬 Conclusion**
 
 Le projet de jeu Smash Fruits a été réalisé en groupe en utilisant les connaissances acquises lors des cours précédents ainsi que beaucoup de recherches complémentaires.
 Nous espérons que vous aprécierez jouer à notre jeu. 
