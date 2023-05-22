@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public Image hitImage;
     public TMP_Text restartText;
+    public AudioSource explosionSound;
+    public AudioSource malusSound;
     public GameObject gameOverMenu;
     public GameObject pauseMenu;
     public GameObject difficultyMenu;
@@ -83,6 +85,7 @@ public class GameManager : MonoBehaviour
     //Fonction appellée lorsqu'une bombe explose, retire 5 point de score et appelle la fonction pour baisser les pvs du joueur
     public void Explosion()
     {
+        explosionSound.Play();
         score -= 5;
         scoreText.text = score.ToString();
 
@@ -153,6 +156,16 @@ public class GameManager : MonoBehaviour
         pauseMenu.SetActive(false);
         pauseButton.SetActive(true);
         Time.timeScale = 1f;
+    }
+
+    public void Malus()
+    {
+        float bombProb = FindObjectOfType<Spawner>().bombProbability;
+        if (bombProb < 0.8)
+        {
+            FindObjectOfType<Spawner>().bombProbability += 0.1f;
+        }
+        malusSound.Play();
     }
 
     //Activation du jeu en difficulté facile (peu de bombe)

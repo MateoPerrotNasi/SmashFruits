@@ -4,6 +4,13 @@ public class LifeCounter : MonoBehaviour
 {
     public GameObject[] life;
     private int lifeCount = 3;
+    private AudioSource bonusSound;
+
+    //Récupère le composant audio source lors de la création de l'objet
+    private void Awake()
+    {
+        bonusSound = GetComponent<AudioSource>();
+    }
 
     //Retire un point de vie au joueur, s'il n'en a plus le jeu s'arrête
     public void DecreaseLife()
@@ -32,8 +39,10 @@ public class LifeCounter : MonoBehaviour
     {
         if (lifeCount < 3)
         {
+            
             life[lifeCount].SetActive(true);
             lifeCount++;
         }
+        bonusSound.Play();
     }
 }

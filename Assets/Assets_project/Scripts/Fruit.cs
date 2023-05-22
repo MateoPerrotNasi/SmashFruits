@@ -4,6 +4,7 @@ public class Fruit : MonoBehaviour
 {
     public GameObject whole;
     public GameObject sliced;
+    public AudioSource sliceSound;
 
     private Rigidbody fruitRigidbody;
     private Collider fruitCollider;
@@ -26,6 +27,7 @@ public class Fruit : MonoBehaviour
         sliced.SetActive(true);
 
         fruitCollider.enabled = false;
+        sliceSound.Play();
         juiceParticle.Play();
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
