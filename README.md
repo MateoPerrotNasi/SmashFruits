@@ -1,92 +1,63 @@
-# SmashFruits
+# ** 🍉 Smash Fruit - Projet de groupe **
 
+Ce projet est un petit jeu de type "Fruit Slicer"
 
+## ** 👨‍💻 Membres de l'équipe **
 
-## Getting started
+- Alexandre Rocchi  
+- Cyril Rogrigues
+- Matéo Perrot--Nasi
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## ** 📝 Description du jeu **
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Le jeu est un projet 3D en vue 2D avec une caméra fixe. Le joueur doit détruire des objets qui apparaissent aléatoirement à l'écran en les tranchant avec la souris. Certains objets rapportent des points, tandis que d'autres font perdre des points de score et de la vie au joueur.
 
-## Add your files
+ ## ** 🔨 Fonctionnalités développées **
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- Un projet 3D en vu 2D avec camera fixe.
+- Créer des objets qui rapportent des points de score au joueur.
+- Créer des objets qui font perdre des points de score et des points de vie au joueur.
+- Propulser les objets créés précédemment de manière aléatoire dans les airs (dans le champs de camera du joueur).
+- Détruire les objets à l'aide d'un cliquer/glisser. Ajouter un effet de trail qui suit la souris lorsqu'elle glisse sur l'écran pour donner du feedback au joueur.
+- Détruire les objets qui retombent et sortent du champs de la camera.
+- Mettre en place un système de score avec une interface qui permet au joueur de connaitre le score actuel de la partie.
+- Ajouter une explosion de particule lorsqu'un objet est détruit par le joueur (variation en fonction des différents objets et type d'objets)
+- Créer un système de point de vie. Les points de vie doivent être affichés à l'écran (interface utilisateur) sous un format d'image, comme sur un Zelda par exemple.
+- Mettre en place un GameOver avec un bouton rejouer et afficher le score final du joueur.
+- Créer un système de difficulté pour varier les types de partie. La difficulté du jeu pourra être choisi avant de lancer la partie. Par exemple 3 boutons sur l'interface du joueur : Facile, Difficile et Expert. - Lorsque vous appuyez sur l'un des bouton de difficulté, la partie se lance avec les variables adaptées au niveau sélectionné par le joueur.
+- Ajouter un menu de pause
+- Ajouter de la musique et des sounds effects pour donner de la vie à votre jeu (les volumes peuvent être réglés dans le menu de départ ou dans le menu pause) 
+- Créer des objets bonus/malus qui apparaitront sur l'écran du joueur de manière aléatoire qu'il devra détruire pour activer des effets bonus/malus. 
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/smashcompany/smashfruits.git
-git branch -M main
-git push -uf origin main
-```
+## ** 📚 Répartition des tâches **
 
-## Integrate with your tools
+* Alexandre : Création de l'UI, des différents menus, des sons et effets.
+* Cyril : Création et animation des objets 3D pour les fruits, les bombes, les bonus et les malus.
+* Matéo : Développement des bonus, des malus, des bombes, du slicer et du spawner.
 
-- [ ] [Set up project integrations](https://gitlab.com/smashcompany/smashfruits/-/settings/integrations)
+⚠ Ces tâches sont les missions données à chaque membre, il y a eu malgré tout des exceptions afin de s'entraider en cas de problèmes.
 
-## Collaborate with your team
+## ** ⏱ Organisation du projet **
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Le projet est géré à l'aide de Git (Anciennement sur Gitlab) pour la gestion des versions et du code source. 
 
-## Test and Deploy
+## ** 📁 Structure du répertoire **
 
-Use the built-in continuous integration in GitLab.
+/Assets/Assets_project: Contient les ressources du jeu (modèles 3D, textures, sons, etc.).
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+/Assets/Assets_project/Scripts: Contient le code source du jeu.
 
-***
+/Assets/Assets_project/Audio: Contient les sons du jeu.*
 
-# Editing this README
+## ** 👁‍🗨 Instructions pour exécuter le jeu **
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+- Cloner le dépôt Git : git clone https://github.com/MateoPerrotNasi/SmashFruits.git
+- Ouvrir le projet dans Unity.
+- Compiler et exécuter le jeu en suivant les instructions spécifiques à votre environnement.
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## ** 🎬 Conclusion **
 
-## Name
-Choose a self-explaining name for your project.
+Le projet de jeu Smash Fruits a été réalisé en groupe en utilisant les connaissances acquises lors des cours précédents ainsi que beaucoup de recherches complémentaires.
+Nous espérons que vous aprécierez jouer à notre jeu. 
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+⚠ Ce projet est un projet d'étude et n'aura aucune mise à jour passé le 22/05/2023.
