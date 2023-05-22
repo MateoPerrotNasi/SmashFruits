@@ -1,6 +1,6 @@
 # **Smash Fruit - Projet de groupe**
 
-Ce projet est un petit jeu de type "Fruit Slicer" développé en utilisant principalement les connaissances acquises lors des cours précédents, ainsi qu'en effectuant des recherches supplémentaires.
+Ce projet est un petit jeu de type "Fruit Slicer"
 
 ## **Membres de l'équipe**
 
