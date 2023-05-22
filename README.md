@@ -31,9 +31,9 @@ Le jeu est un projet 3D en vue 2D avec une caméra fixe. Le joueur doit détruir
 
 ## ** 📚 Répartition des tâches **
 
-* Alexandre : Gestion des interactions utilisateur, des sons et effets, et du système de vie .
-* Cyril : Création des objets 3D, animations, effets ect...
-* Matéo : Développement des malus, des bombes et du spawner.
+* Alexandre : Création de l'UI, des différents menus, des sons et effets.
+* Cyril : Création et animation des objets 3D pour les fruits, les bombes, les bonus et les malus.
+* Matéo : Développement des bonus, des malus, des bombes, du slicer et du spawner.
 
 ⚠ Ces tâches sont les missions données à chaque membre, il y a eu malgré tout des exceptions afin de s'entraider en cas de problèmes.
 
